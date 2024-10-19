@@ -9,7 +9,7 @@
 
 body { 
     background: rgb(3,2,54);
-    background: linear-gradient(90deg, rgba(3,2,54,1) 14%, rgba(9,9,121,1) 48%, rgba(2,0,36,1) 82%);
+    background: linear-gradient(90deg, rgba(3,2,54,1) 14%, rgba(9,9,121,1) 48%, rgba(2,0,36,1) 82%)
 }
 
 .Interface {
@@ -300,4 +300,22 @@ form.formulario-contato {
 
 html {
     scroll-behavior: smooth; /* Adiciona rolagem suave */
+}
+
+/* Para navegadores baseados em WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Cor da parte que pode ser arrastada */
+    border-radius: 5px; /* Arredondamento da parte arrastável */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor ao passar o mouse */
 }
