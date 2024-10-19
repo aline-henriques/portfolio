@@ -1,0 +1,303 @@
+/* Seção Geral do Site */
+
+* { 
+    margin: 0; /*Zerar as margens padrão */
+    padding: 0; /*Zerar as paddings padrão */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fonte */
+}
+
+body { 
+    background: rgb(3,2,54);
+    background: linear-gradient(90deg, rgba(3,2,54,1) 14%, rgba(9,9,121,1) 48%, rgba(2,0,36,1) 82%);
+}
+
+.Interface {
+    max-width: 1280px;
+    margin: 0 auto; /* Centralizar a interface na tela */
+}
+
+h2.titulo {
+    color: #b5b5f4d2; /* Cor do título */
+    font-size: 40px; /* Tamanho do título */
+    text-align: center; /* Centralizar o título */
+    margin-bottom: 20px; /* Adiciona distância entre o título e os ícones */
+
+}
+
+
+/* Seção do cabeçalho */
+
+header {
+    padding: 40px 4%; /*Espaçamento interno para o cabeçalho */
+}
+
+header nav ul {
+    list-style-type: none; /*Remover estilos padrões das listas*/
+    display: flex; 
+    justify-content: flex-end; /* Alinhamento da navegação à direita */
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px; /*Espaçamento entre os itens do cabeçalho */
+}
+
+header nav ul li a {
+    text-decoration: none; 
+    color: #ffff; /* Cor do texto dos botões de navegação */
+    font-size: 17px; /* Tamanho da fonte dos botões de navegação */
+    padding: 10px 20px; /* Espaçamento interno nos botões */
+    background-color: #1a1f56; /* Cor de fundo dos botões */
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição na mudança de cor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.349); /* Sombra aos botões */
+}
+
+
+header nav ul li a:hover {
+    background-color: #d688ab89; /* Cor de fundo dos botões ao passar o mouse */
+}
+
+header .Contato {
+    display: inline-block; 
+    margin-left: 20px; /* Espaçamento entre os botões */
+}
+
+/* Seção topo do site */
+
+section .topo-do-site {
+    padding: 60px 0; 
+    background-color: #f4f4f4; /* Cor de fundo */
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinhar itens */
+}
+
+.topo-do-site .flex {
+    align-items: center;
+    justify-content: center; /* Centralizar os itens */
+}
+
+.topo-do-site h1 {
+    font-size: 65px; /* Tamanho da fonte h1 */
+    color: #b5b5f4; /* Cor do título h1 */
+    margin-bottom: -10px; /* Ajusta o espaço abaixo do h1 */
+    margin-right: 60px;
+    padding-right: 5px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.topo-do-site p {
+    font-size: 40px; /* Tamanho da fonte do parágrafo */
+    color: #a1a1ddd2; /* Cor da fonte do parágrafo */
+    margin-top: -10px; /* Espaço entre o título e o parágrafo */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.img-topo-site img {
+    width: 500px; /* Largura da imagem (eu) */
+    height: 500px; /* Altura da imagem (eu) */
+    border-radius: 50%; /* Arredondamento */
+    object-fit: cover; /* Imagem preencha a área sem distorção */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Sombra ajustada */
+    animation: float 3s ease-in-out infinite; /* Adiciona a animação de flutuação */
+    margin-top: 100px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Posição original */
+    }
+    50% {
+        transform: translateY(-20px); /* Move para cima */
+    }
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto; /* Centralizar a interface */
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centralizar o conteúdo */
+}
+
+/* Seção de Sobre */
+.sobre {
+    padding: 20px; /* Espaçamento interno */
+    margin: 50px 0; /* Margem acima e abaixo da seção */
+}
+
+.sobre .titulo {
+    color: #7a7ab1; /* Cor do texto do título */
+    margin-bottom: 50px; /* Espaçamento abaixo do título */
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.sobre .paragrafo {
+    color: #fff; /* Cor do texto dos parágrafos */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    margin: 20px 0; /* Espaçamento acima e abaixo de cada parágrafo */
+    padding: 40px 40px; /* Adiciona 15px de padding acima e abaixo, e 20px nas laterais (esquerda e direita) */
+    background-color: #1a1f566a; /* Cor de fundo do parágrafo */
+    border-radius: 10px; /* Arredondamento dos cantos */
+    font-size: larger; /* Aumenta o tamanho da fonte */
+    justify-content: center; /* Centraliza o conteúdo (não é aplicável para parágrafos, mas fica aqui caso tenha um flex container) */
+    transition: background-color 0.3s; /* Transição na mudança de cor */
+}
+
+.sobre .paragrafo:hover {
+    background-color: #2b306a; /* Cor de fundo do parágrafo ao passar o mouse */
+}
+
+/* Seção de projetos */
+section.projetos {
+    padding: 70px 0; /* Espaçamento ao redor da seção */
+    margin-bottom: 40px; /* Adicione essa linha para aumentar a distância */
+    margin-top: 50px;
+}
+
+h2-titulo {
+    font-size: 20px;
+}
+
+.projetos-lista {
+    display: flex; 
+    justify-content: space-around; /* Espaçamento entre os itens de projetos */
+    margin-top: 40px; /* Espaçamento acima da lista de projetos */
+    animation: float 3s ease-in-out infinite; /* Adiciona a animação de flutuação */
+    
+}
+
+.projeto-item {
+    color: #b5b5f4d2; /* Cor do texto dos itens de projeto */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: center; /* Alinhar o texto ao centro */
+    width: 400px; /* Largura dos itens de projeto */
+    height: 400px; /* Altura dos itens de projeto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centralizar o conteúdo dentro dos itens */
+    align-items: center;
+    margin: 0 20px; /* Espaçamento lateral entre os projetos */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.349); /* Sombra aos itens de projeto */
+    border-radius: 50px; /* Arredondamento dos cantos dos itens de projeto */
+    transition: box-shadow 0.3s; /* Transição suave ao mudar a sombra */
+}
+
+
+.projeto-item a i {
+    font-size: 150px; /* Altere o tamanho conforme necessário */
+    color: #b5b5f4d2; /* Cor do ícone */
+    transition: color 0.3s; /* Transição suave ao mudar a cor */
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+.projeto-item a:hover i {
+    color: #c4c4f2; /* Cor do ícone ao passar o mouse */
+}
+
+/* Seção heading Contato */
+
+.contato-titulo {
+    margin-bottom: 40px; /* Espaço abaixo do título de contato */
+    margin-top: 40px;
+}
+
+/* Seção do formulário de contato */
+
+form.formulario-contato {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centralizar o formulário */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #1a1f5677; /* Cor de fundo do formulário */
+    border-radius: 10px; /* Arredondamento dos cantos do formulário */
+    margin-bottom: 150px; /* Aumente esse valor para ajustar a distância */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px; /* Espaçamento abaixo dos labels */
+    color: #ebe9e0; /* Cor do texto dos labels */
+    font-size: 16px; /* Tamanho da fonte dos labels */
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e4e2d5; 
+    color: #333; 
+}
+
+.form-group button {
+    background-color: #e4e2d5; /* Cor de fundo do botão envio */
+    color: #515181; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none;
+    border-radius: 8px; /* Arredondamento do botão */
+    cursor: pointer; /* Cursor pointer no botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+}
+
+.form-group button:hover {
+    background-color: #dddbd1; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Seção Redes Sociais */
+
+.redes-sociais {
+    animation: float 3s ease-in-out infinite; /* Adiciona a animação de flutuação */
+}
+
+.redes-sociais-titulo {
+    margin-top: 10px; /* Distância entre o título e o topo da seção */
+}
+
+.redes-lista {
+    display: flex;
+    justify-content: center; /* Centralizar os ícones das redes sociais */
+    margin-top: 20px;
+    margin-bottom: 150px; /* Espaço abaixo da seção de redes sociais */
+}
+
+.rede-item {
+    margin: 0 25px; /* Espaçamento lateral entre os itens */
+}
+
+.rede-item i {
+    font-size: 65px; /* Tamanho dos ícones de redes sociais */
+    color: #b5b5f4d2; /* Cor inicial dos ícones */
+    transition: color 0.3s; /* Transição suave ao mudar a cor */
+}
+
+.rede-item a:hover i {
+    color: #c4c4f2; /* Cor dos ícones ao passar o mouse */
+}
+
+html {
+    scroll-behavior: smooth; /* Adiciona rolagem suave */
+}
