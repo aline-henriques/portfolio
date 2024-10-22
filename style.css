@@ -312,3 +312,106 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+
+/* Responsividade para Mobile*/
+
+@media (max-width: 768px) {
+    .img-topo-site img {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 40px;
+        margin-right: 0;
+    }
+
+    .topo-do-site p {
+        font-size: 20px;
+    }
+
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        padding: 10px 0;
+    }
+
+    .sobre .paragrafo {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .projetos-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form.formulario-contato {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site p {
+        font-size: 16px;
+    }
+
+    .img-topo-site img {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    form.formulario-contato {
+        font-size: 14px;
+    }
+
+    .rede-item i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .Interface {
+        padding: 0 10px;
+    }
+    
+    .sobre .paragrafo {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}
