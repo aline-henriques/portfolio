@@ -1,91 +1,88 @@
 /* Seção Geral do Site */
 
 * { 
-    margin: 0; /*Zerar as margens padrão */
-    padding: 0; /*Zerar as paddings padrão */
+    margin: 0; 
+    padding: 0; 
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Fonte */
+    font-family: 'Poppins', sans-serif;
 }
 
 body { 
     background: rgb(3,2,54);
-    background: linear-gradient(90deg, rgba(3,2,54,1) 14%, rgba(9,9,121,1) 48%, rgba(2,0,36,1) 82%)
+    background: linear-gradient(90deg, rgba(3,2,54,1) 14%, rgba(9,9,121,1) 48%, rgba(2,0,36,1) 82%);
 }
 
 .Interface {
     max-width: 1280px;
-    margin: 0 auto; /* Centralizar a interface na tela */
+    margin: 0 auto; 
 }
 
 h2.titulo {
-    color: #b5b5f4d2; /* Cor do título */
-    font-size: 40px; /* Tamanho do título */
-    text-align: center; /* Centralizar o título */
-    margin-bottom: 20px; /* Adiciona distância entre o título e os ícones */
-
+    color: #b5b5f4d2; 
+    font-size: 40px; 
+    text-align: center; 
+    margin-bottom: 20px;
 }
-
 
 /* Seção do cabeçalho */
 
 header {
-    padding: 40px 4%; /*Espaçamento interno para o cabeçalho */
+    padding: 40px 4%;
 }
 
 header nav ul {
-    list-style-type: none; /*Remover estilos padrões das listas*/
+    list-style-type: none;
     display: flex; 
-    justify-content: flex-end; /* Alinhamento da navegação à direita */
+    justify-content: flex-end;
 }
 
 header nav ul li {
     display: inline-block;
-    padding: 0 20px; /*Espaçamento entre os itens do cabeçalho */
+    padding: 0 20px;
 }
 
 header nav ul li a {
-    text-decoration: none; 
-    color: #ffff; /* Cor do texto dos botões de navegação */
-    font-size: 17px; /* Tamanho da fonte dos botões de navegação */
-    padding: 10px 20px; /* Espaçamento interno nos botões */
-    background-color: #1a1f56; /* Cor de fundo dos botões */
-    border-radius: 30px; /* Bordas arredondadas */
-    transition: background-color 0.3s; /* Transição na mudança de cor */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.349); /* Sombra aos botões */
+    text-decoration: none;
+    color: #ffff;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: #1a1f56;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.349);
 }
 
-
 header nav ul li a:hover {
-    background-color: #d688ab89; /* Cor de fundo dos botões ao passar o mouse */
+    background-color: #d688ab89;
 }
 
 header .Contato {
-    display: inline-block; 
-    margin-left: 20px; /* Espaçamento entre os botões */
+    display: inline-block;
+    margin-left: 20px;
 }
 
 /* Seção topo do site */
 
 section .topo-do-site {
-    padding: 60px 0; 
-    background-color: #f4f4f4; /* Cor de fundo */
+    padding: 60px 0;
+    background-color: #f4f4f4;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Alinhar itens */
+    align-items: center;
 }
 
 .topo-do-site .flex {
     align-items: center;
-    justify-content: center; /* Centralizar os itens */
+    justify-content: center;
 }
 
 .topo-do-site h1 {
-    font-size: 65px; /* Tamanho da fonte h1 */
-    color: #b5b5f4; /* Cor do título h1 */
-    margin-bottom: -10px; /* Ajusta o espaço abaixo do h1 */
+    font-size: 65px;
+    color: #b5b5f4;
+    margin-bottom: -10px;
     margin-right: 60px;
     padding-right: 5px;
     font-family: "Pixelify Sans", sans-serif;
@@ -95,9 +92,9 @@ section .topo-do-site {
 }
 
 .topo-do-site p {
-    font-size: 40px; /* Tamanho da fonte do parágrafo */
-    color: #a1a1ddd2; /* Cor da fonte do parágrafo */
-    margin-top: -10px; /* Espaço entre o título e o parágrafo */
+    font-size: 40px;
+    color: #a1a1ddd2;
+    margin-top: -10px;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -105,68 +102,68 @@ section .topo-do-site {
 }
 
 .img-topo-site img {
-    width: 500px; /* Largura da imagem (eu) */
-    height: 500px; /* Altura da imagem (eu) */
-    border-radius: 50%; /* Arredondamento */
-    object-fit: cover; /* Imagem preencha a área sem distorção */
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Sombra ajustada */
-    animation: float 3s ease-in-out infinite; /* Adiciona a animação de flutuação */
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    animation: float 3s ease-in-out infinite;
     margin-top: 100px;
 }
 
 @keyframes float {
     0%, 100% {
-        transform: translateY(0); /* Posição original */
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px); /* Move para cima */
+        transform: translateY(-20px);
     }
 }
 
 .interface {
     max-width: 1280px;
-    margin: 0 auto; /* Centralizar a interface */
+    margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: center;
-    align-items: center; /* Centralizar o conteúdo */
+    align-items: center;
 }
 
 /* Seção de Sobre */
 .sobre {
-    padding: 20px; /* Espaçamento interno */
-    margin: 50px 0; /* Margem acima e abaixo da seção */
+    padding: 20px;
+    margin: 50px 0;
 }
 
 .sobre .titulo {
-    color: #7a7ab1; /* Cor do texto do título */
-    margin-bottom: 50px; /* Espaçamento abaixo do título */
+    color: #7a7ab1;
+    margin-bottom: 50px;
     margin-top: 50px;
     font-size: 50px;
 }
 
 .sobre .paragrafo {
-    color: #fff; /* Cor do texto dos parágrafos */
-    line-height: 1.5; /* Altura da linha para melhor legibilidade */
-    margin: 20px 0; /* Espaçamento acima e abaixo de cada parágrafo */
-    padding: 40px 40px; /* Adiciona 15px de padding acima e abaixo, e 20px nas laterais (esquerda e direita) */
-    background-color: #1a1f566a; /* Cor de fundo do parágrafo */
-    border-radius: 10px; /* Arredondamento dos cantos */
-    font-size: larger; /* Aumenta o tamanho da fonte */
-    justify-content: center; /* Centraliza o conteúdo (não é aplicável para parágrafos, mas fica aqui caso tenha um flex container) */
-    transition: background-color 0.3s; /* Transição na mudança de cor */
+    color: #fff;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 40px 40px;
+    background-color: #1a1f566a;
+    border-radius: 10px;
+    font-size: larger;
+    justify-content: center;
+    transition: background-color 0.3s;
 }
 
 .sobre .paragrafo:hover {
-    background-color: #2b306a; /* Cor de fundo do parágrafo ao passar o mouse */
+    background-color: #2b306a;
 }
 
 /* Seção de projetos */
 section.projetos {
-    padding: 70px 0; /* Espaçamento ao redor da seção */
-    margin-bottom: 40px; /* Adicione essa linha para aumentar a distância */
+    padding: 70px 0;
+    margin-bottom: 40px;
     margin-top: 50px;
 }
 
@@ -175,147 +172,143 @@ h2-titulo {
 }
 
 .projetos-lista {
-    display: flex; 
-    justify-content: space-around; /* Espaçamento entre os itens de projetos */
-    margin-top: 40px; /* Espaçamento acima da lista de projetos */
-    animation: float 3s ease-in-out infinite; /* Adiciona a animação de flutuação */
-    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    animation: float 3s ease-in-out infinite;
 }
 
 .projeto-item {
-    color: #b5b5f4d2; /* Cor do texto dos itens de projeto */
-    font-size: 18px; /* Tamanho da fonte */
-    text-align: center; /* Alinhar o texto ao centro */
-    width: 400px; /* Largura dos itens de projeto */
-    height: 400px; /* Altura dos itens de projeto */
+    color: #b5b5f4d2;
+    font-size: 18px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centralizar o conteúdo dentro dos itens */
+    justify-content: center;
     align-items: center;
-    margin: 0 20px; /* Espaçamento lateral entre os projetos */
+    margin: 0 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.349); /* Sombra aos itens de projeto */
-    border-radius: 50px; /* Arredondamento dos cantos dos itens de projeto */
-    transition: box-shadow 0.3s; /* Transição suave ao mudar a sombra */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.349);
+    border-radius: 50px;
+    transition: box-shadow 0.3s;
 }
 
-
 .projeto-item a i {
-    font-size: 150px; /* Altere o tamanho conforme necessário */
-    color: #b5b5f4d2; /* Cor do ícone */
-    transition: color 0.3s; /* Transição suave ao mudar a cor */
+    font-size: 150px;
+    color: #b5b5f4d2;
+    transition: color 0.3s;
     margin-top: 25px;
     margin-bottom: 70px;
 }
 
 .projeto-item a:hover i {
-    color: #c4c4f2; /* Cor do ícone ao passar o mouse */
+    color: #c4c4f2;
 }
 
 /* Seção heading Contato */
 
 .contato-titulo {
-    margin-bottom: 40px; /* Espaço abaixo do título de contato */
+    margin-bottom: 40px;
     margin-top: 40px;
 }
 
 /* Seção do formulário de contato */
 
 form.formulario-contato {
-    max-width: 600px; /* Largura máxima do formulário */
-    margin: 0 auto; /* Centralizar o formulário */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #1a1f5677; /* Cor de fundo do formulário */
-    border-radius: 10px; /* Arredondamento dos cantos do formulário */
-    margin-bottom: 150px; /* Aumente esse valor para ajustar a distância */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1f5677;
+    border-radius: 10px;
+    margin-bottom: 150px;
 }
 
 .form-group {
-    margin-bottom: 20px;
     margin-bottom: 20px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px; /* Espaçamento abaixo dos labels */
-    color: #ebe9e0; /* Cor do texto dos labels */
-    font-size: 16px; /* Tamanho da fonte dos labels */
+    margin-bottom: 5px;
+    color: #ebe9e0;
+    font-size: 16px;
 }
 
 .form-group input, 
 .form-group textarea {
-    width: 100%; 
-    padding: 10px; 
-    font-size: 16px; 
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #e4e2d5; 
-    color: #333; 
+    background-color: #e4e2d5;
+    color: #333;
 }
 
 .form-group button {
-    background-color: #e4e2d5; /* Cor de fundo do botão envio */
-    color: #515181; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #e4e2d5;
+    color: #515181;
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px; /* Arredondamento do botão */
-    cursor: pointer; /* Cursor pointer no botão */
-    font-size: 18px; /* Tamanho da fonte do botão */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .form-group button:hover {
-    background-color: #dddbd1; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #dddbd1;
 }
 
 /* Seção Redes Sociais */
 
 .redes-sociais {
-    animation: float 3s ease-in-out infinite; /* Adiciona a animação de flutuação */
+    animation: float 3s ease-in-out infinite;
 }
 
 .redes-sociais-titulo {
-    margin-top: 10px; /* Distância entre o título e o topo da seção */
+    margin-top: 10px;
 }
 
 .redes-lista {
     display: flex;
-    justify-content: center; /* Centralizar os ícones das redes sociais */
+    justify-content: center;
     margin-top: 20px;
-    margin-bottom: 150px; /* Espaço abaixo da seção de redes sociais */
+    margin-bottom: 150px;
 }
 
 .rede-item {
-    margin: 0 25px; /* Espaçamento lateral entre os itens */
+    margin: 0 25px;
 }
 
 .rede-item i {
-    font-size: 65px; /* Tamanho dos ícones de redes sociais */
-    color: #b5b5f4d2; /* Cor inicial dos ícones */
-    transition: color 0.3s; /* Transição suave ao mudar a cor */
+    font-size: 65px;
+    color: #b5b5f4d2;
+    transition: color 0.3s;
 }
 
 .rede-item a:hover i {
-    color: #c4c4f2; /* Cor dos ícones ao passar o mouse */
+    color: #c4c4f2;
 }
 
 html {
-    scroll-behavior: smooth; /* Adiciona rolagem suave */
+    scroll-behavior: smooth;
 }
 
-/* Para navegadores baseados em WebKit (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Cor do fundo da barra de rolagem */
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; /* Cor da parte que pode ser arrastada */
-    border-radius: 5px; /* Arredondamento da parte arrastável */
+    background: #888;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Cor ao passar o mouse */
+    background: #555;
 }
