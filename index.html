@@ -25,7 +25,6 @@
         </nav>
     </header>
     
-
 <main>
     <section id="inicio" class="topo-do-site"> 
         <div class="flex">
@@ -66,7 +65,7 @@
                     </a>
                 </div>
                 <div class="projeto-item">
-                    <h2>Calendário</h2>
+                    <h2>GitHub</h2>
                     <a href="https://github.com/aline-henriques" target="_blank">
                         <i class="fa-light fa-calendar-check"></i>
                     </a>
@@ -78,18 +77,20 @@
     <section id="contato" class="contato"> 
         <div class="Interface">
             <h2 class="titulo contato-titulo">Contato</h2>
-            <form class="formulario-contato">
+            <!-- Atualizado para usar Netlify Forms -->
+            <form name="contact" method="POST" netlify>
+                <input type="hidden" name="form-name" value="contact">
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" required>
+                    <input type="text" id="nome" name="nome" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" rows="5" required></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit">Enviar</button>
@@ -97,7 +98,6 @@
             </form>
         </div>
     </section>
-
 
     <section id="redes-sociais" class="redes-sociais"> 
         <div class="Interface">
