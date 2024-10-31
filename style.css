@@ -49,11 +49,11 @@ header nav ul li a {
     background-color: #1a1f56;
     border-radius: 30px;
     transition: background-color 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.349);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.189);
 }
 
 header nav ul li a:hover {
-    background-color: #d688ab89;
+    background-color:#171b4b5e;
 }
 
 header .Contato {
@@ -196,11 +196,11 @@ h2-titulo {
 }
 
 .projeto-item a i {
-    font-size: 150px;
+    font-size: 120px;
     color: #b5b5f4d2;
     transition: color 0.3s;
     margin-top: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .projeto-item a:hover i {
@@ -268,7 +268,7 @@ form.formulario-contato {
 }
 
 .redes-sociais-titulo {
-    margin-top: 10px;
+    margin-top: 200px;
 }
 
 .redes-lista {
