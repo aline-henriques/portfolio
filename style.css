@@ -1,5 +1,3 @@
-/* Seção Geral do Site */
-
 * { 
     margin: 0; 
     padding: 0; 
@@ -24,15 +22,13 @@ h2.titulo {
     margin-bottom: 20px;
 }
 
-/* Seção do cabeçalho */
-
 header {
     padding: 40px 4%;
 }
 
 header nav ul {
     list-style-type: none;
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -46,22 +42,33 @@ header nav ul li a {
     color: #ffff;
     font-size: 17px;
     padding: 10px 20px;
-    background-color: #1a1f56;
-    border-radius: 30px;
-    transition: background-color 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.189);
+    position: relative;
+    transition: color 0.3s;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: width 0.3s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
 }
 
 header nav ul li a:hover {
-    background-color:#171b4b5e;
+    color: #ffffff;
 }
 
 header .Contato {
     display: inline-block;
     margin-left: 20px;
 }
-
-/* Seção topo do site */
 
 section .topo-do-site {
     padding: 60px 0;
@@ -131,7 +138,6 @@ section .topo-do-site {
     align-items: center;
 }
 
-/* Seção de Sobre */
 .sobre {
     padding: 20px;
     margin: 50px 0;
@@ -160,7 +166,86 @@ section .topo-do-site {
     background-color: #2b306a;
 }
 
-/* Seção de projetos */
+.skills {
+    padding: 20px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 50px;
+    color: #7a7ab1;
+    margin-bottom: 40px;
+}
+
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress-bar {
+    width: 50%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.progress-bar label {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar label i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+progress[value] {
+    background-color: #2b306a;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+
+.icon-html {
+    color: #e34f26;
+}
+
+.icon-css {
+    color: #264de4;
+}
+
+.icon-js {
+    color: #f0db4f;
+}
+
+.paragrafo {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
 section.projetos {
     padding: 70px 0;
     margin-bottom: 40px;
@@ -207,14 +292,10 @@ h2-titulo {
     color: #c4c4f2;
 }
 
-/* Seção heading Contato */
-
 .contato-titulo {
     margin-bottom: 40px;
     margin-top: 40px;
 }
-
-/* Seção do formulário de contato */
 
 form.formulario-contato {
     max-width: 600px;
@@ -260,8 +341,6 @@ form.formulario-contato {
 .form-group button:hover {
     background-color: #dddbd1;
 }
-
-/* Seção Redes Sociais */
 
 .redes-sociais {
     animation: float 3s ease-in-out infinite;
@@ -313,105 +392,24 @@ html {
     background: #555;
 }
 
-
-/* Responsividade para Mobile*/
-
-@media (max-width: 768px) {
-    .img-topo-site img {
-        width: 300px;
-        height: 300px;
-        margin-top: 50px;
-    }
-
-    .topo-do-site h1 {
-        font-size: 40px;
-        margin-right: 0;
-    }
-
-    .topo-do-site p {
-        font-size: 20px;
-    }
-
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li {
-        padding: 10px 0;
-    }
-
-    .sobre .paragrafo {
-        font-size: 16px;
-        padding: 20px;
-    }
-
-    .projetos-lista {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projeto-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    form.formulario-contato {
-        width: 100%;
-        padding: 10px;
-    }
+footer {
+    padding: 40px 0;
+    background-color: #1a1f56;
+    color: #fff;
+    text-align: center;
 }
 
-@media (max-width: 480px) {
-    .topo-do-site h1 {
-        font-size: 30px;
-    }
-
-    .topo-do-site p {
-        font-size: 16px;
-    }
-
-    .img-topo-site img {
-        width: 250px;
-        height: 250px;
-        margin-top: 30px;
-    }
-
-    form.formulario-contato {
-        font-size: 14px;
-    }
-
-    .rede-item i {
-        font-size: 40px;
-    }
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .Interface {
-        padding: 0 10px;
-    }
-    
-    .sobre .paragrafo {
-        padding: 15px;
-    }
+footer a {
+    text-decoration: none;
+    color: #b5b5f4;
+    font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    header nav ul {
-        display: none;
-    }
-
-    .menu-btn {
-        display: block;
-        font-size: 30px;
-        color: white;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
+footer a:hover {
+    color: #fff;
 }
