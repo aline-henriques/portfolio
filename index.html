@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@104,0&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap'); </style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@104,0&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');</style>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,10 +18,9 @@
         <nav class="Menu"> 
             <ul>
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li> 
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#redes-sociais">Redes Sociais</a></li>
+                <li><a href="sobre.html">Sobre</a></li> 
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -38,94 +38,6 @@
         </div>
     </section>   
 
-    <section id="sobre" class="sobre"> 
-        <div class="Interface">
-            <h2 class="titulo">Sobre</h2>
-            <p class="paragrafo"> Sou estudante de Análise e Desenvolvimento de Sistemas - 1o Período, na César School, localizada em Recife - PE.
-                <br>Iniciando na área de tecnologia, busco aprendizado e novas descobertas. Tenho um vasto <br> interesse em desenvolvimento de sites e designs inovadores, minimalistas e modernos. Atualmente estou com foco <br>de estudos em Python, Desenvolvimento Web: <strong>HTML, CSS e JavaScript</strong> - e também Web Design. Meus hobbies são muitos, <br> entre eles: estudos, autocuidado, maquiagem, moda e beleza, jogos, desenhar e pintar...</p>                
-        </div>
-    </section>
- 
-    <section id="projetos" class="projetos"> 
-        <div class="Interface">
-            <div class="flex">
-                <h2 class="titulo">Projetos</h2>
-            </div>
-            <div class="projetos-lista">
-                <div class="projeto-item">
-                    <h2>Calculadora</h2>
-                    <a href="https://calculadora-operacoes.netlify.app/" target="_blank">
-                        <i class="fa-thin fa-calculator"></i>
-                    </a>
-                </div>
-                <div class="projeto-item">
-                    <h2>Calculadora IMC</h2>
-                    <a href="https://calcindicedemassacorporal.netlify.app/" target="_blank">
-                        <i class="fa-light fa-weight-scale"></i>
-                    </a>
-                </div>
-                <div class="projeto-item">
-                    <h2>Lixeira Automática</h2>
-                    <a href="https://lixeira-automatica.netlify.app/" target="_blank">
-                        <i class="fa-light fa-trash-can"></i>
-                    </a>
-                </div>
-            </div>            
-        </div>
-    </section>
-
-    <section id="contato" class="contato"> 
-        <div class="Interface">
-            <h2 class="titulo contato-titulo">Contato</h2>
-            <form name="contact" method="POST" action="/" netlify>
-                <input type="hidden" name="form-name" value="contact">
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section id="redes-sociais" class="redes-sociais"> 
-        <div class="Interface">
-            <h2 class="titulo redes-sociais-titulo">Redes Sociais</h2>
-            <div class="redes-lista">
-                <div class="rede-item">
-                    <a href="https://www.instagram.com/henriques_line/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                <div class="rede-item">
-                    <a href="https://www.linkedin.com/in/aline-henriques" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-                <div class="rede-item">
-                    <a href="https://github.com/aline-henriques" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <div class="rede-item">
-                    <a href="mailto:alinealbhenriques@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>    
-    
 </main>
 </body>
 </html>
