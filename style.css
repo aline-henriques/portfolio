@@ -1,3 +1,5 @@
+/* Seção Geral do Site */
+
 * { 
     margin: 0; 
     padding: 0; 
@@ -21,6 +23,8 @@ h2.titulo {
     text-align: center; 
     margin-bottom: 20px;
 }
+
+/* Seção do cabeçalho */
 
 header {
     padding: 40px 4%;
@@ -69,6 +73,8 @@ header .Contato {
     display: inline-block;
     margin-left: 20px;
 }
+
+/* Seção topo do site */
 
 section .topo-do-site {
     padding: 60px 0;
@@ -138,6 +144,8 @@ section .topo-do-site {
     align-items: center;
 }
 
+/* Seção de Sobre */
+
 .sobre {
     padding: 20px;
     margin: 50px 0;
@@ -147,7 +155,7 @@ section .topo-do-site {
     color: #7a7ab1;
     margin-bottom: 50px;
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .sobre .paragrafo {
@@ -166,6 +174,7 @@ section .topo-do-site {
     background-color: #2b306a;
 }
 
+/* Seção de Habilidades */
 .skills {
     padding: 20px;
     margin: 50px 0;
@@ -173,9 +182,9 @@ section .topo-do-site {
 }
 
 .skills h2 {
-    font-size: 50px;
+    font-size: 40px;
     color: #7a7ab1;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .progress-bar-container {
@@ -186,7 +195,7 @@ section .topo-do-site {
 }
 
 .progress-bar {
-    width: 50%;
+    width: 45%;
     margin: 10px 0;
     display: flex;
     align-items: center;
@@ -203,7 +212,7 @@ section .topo-do-site {
 
 .progress-bar label i {
     font-size: 30px;
-    margin-right: 10px;
+    margin-right: 10px; 
 }
 
 progress {
@@ -240,11 +249,17 @@ progress::-webkit-progress-value {
     color: #f0db4f;
 }
 
-.paragrafo {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
+.icon-py {
+    color: #ff9f43;
 }
+
+.nomes {
+    font-size: 20px;
+    color: #fff; 
+    font-weight: 600; 
+}
+
+/* Seção de projetos */
 
 section.projetos {
     padding: 70px 0;
@@ -291,6 +306,8 @@ h2-titulo {
 .projeto-item a:hover i {
     color: #c4c4f2;
 }
+
+/* Seção Contato */
 
 .contato-titulo {
     margin-bottom: 40px;
@@ -342,6 +359,8 @@ form.formulario-contato {
     background-color: #dddbd1;
 }
 
+/* Seção Redes Sociais */
+
 .redes-sociais {
     animation: float 3s ease-in-out infinite;
 }
@@ -392,24 +411,106 @@ html {
     background: #555;
 }
 
-footer {
-    padding: 40px 0;
-    background-color: #1a1f56;
-    color: #fff;
-    text-align: center;
+
+/* Responsividade para Mobile*/
+
+@media (max-width: 768px) {
+    .img-topo-site img {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 40px;
+        margin-right: 0;
+    }
+
+    .topo-do-site p {
+        font-size: 20px;
+    }
+
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        padding: 10px 0;
+    }
+
+    .sobre .paragrafo {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .projetos-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form.formulario-contato {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
-footer p {
-    font-size: 16px;
-    margin-bottom: 10px;
+@media (max-width: 480px) {
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site p {
+        font-size: 16px;
+    }
+
+    .img-topo-site img {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    form.formulario-contato {
+        font-size: 14px;
+    }
+
+    .rede-item i {
+        font-size: 40px;
+    }
 }
 
-footer a {
-    text-decoration: none;
-    color: #b5b5f4;
-    font-size: 16px;
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .Interface {
+        padding: 0 10px;
+    }
+    
+    .sobre .paragrafo {
+        padding: 15px;
+    }
 }
 
-footer a:hover {
-    color: #fff;
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
 }
+
