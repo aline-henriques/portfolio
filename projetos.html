@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
     <title>Projetos</title> 
@@ -14,33 +19,37 @@
 </head>
 <body>
     <main> 
-        <section id="projetos" class="projetos"> 
+        <section id="projetos" class="projetos">
             <div class="Interface">
                 <div class="flex">
                     <h2 class="titulo">Projetos</h2>
                 </div>
-                <div class="projetos-lista">
-                    <div class="projeto-item">
-                        <h2>Calculadora</h2>
-                        <a href="https://calculadora-operacoes.netlify.app/" target="_blank">
-                            <i class="fa-thin fa-calculator"></i>
-                        </a>
+                <div class="projetos-container">
+                    <button class="scroll-btn left">&lt;</button>
+                    <div class="projetos-lista">
+                        <div class="projeto-item">
+                            <h2>Calculadora</h2>
+                            <a href="https://calculadora-operacoes.netlify.app/" target="_blank">
+                                <img src="images/calculadora.png" id="calculadora">
+                            </a>
+                        </div>
+                        <div class="projeto-item">
+                            <h2>Calculadora IMC</h2>
+                            <a href="https://calcindicedemassacorporal.netlify.app/" target="_blank">
+                                <img src="images/peso.png" id="peso">
+                            </a>
+                        </div>
+                        <div class="projeto-item">
+                            <h2>Lixeira Automática</h2>
+                            <a href="https://lixeira-automatica.netlify.app/" target="_blank">
+                                <img src="images/lixeira.png" id="lixeira">
+                            </a>
+                        </div>
                     </div>
-                    <div class="projeto-item">
-                        <h2>Calculadora IMC</h2>
-                        <a href="https://calcindicedemassacorporal.netlify.app/" target="_blank">
-                            <i class="fa-light fa-weight-scale"></i>
-                        </a>
-                    </div>
-                    <div class="projeto-item">
-                        <h2>Lixeira Automática</h2>
-                        <a href="https://lixeira-automatica.netlify.app/" target="_blank">
-                            <i class="fa-light fa-trash-can"></i>
-                        </a>
-                    </div>
-                </div>            
+                    <button class="scroll-btn right">&gt;</button>
+                </div>
             </div>
-        </section>
+        </section>        
     </main>
 </body>
 </html>
