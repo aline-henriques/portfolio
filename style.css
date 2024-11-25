@@ -8,8 +8,8 @@
 }
 
 body { 
-    background: rgb(3,2,54);
-    background: linear-gradient(90deg, rgba(3,2,54,1) 14%, rgba(9,9,121,1) 48%, rgba(2,0,36,1) 82%);
+    background: rgba(255, 194, 209, 0.503);
+    background: radial-gradient(circle, rgba(255, 194, 209, 0.573) 14%, rgba(255, 179, 198, 0.677) 37%, rgba(255,143,171,1) 82%);
 }
 
 .Interface {
@@ -17,17 +17,24 @@ body {
     margin: 0 auto; 
 }
 
-h2.titulo {
-    color: #b5b5f4d2; 
-    font-size: 40px; 
-    text-align: center; 
-    margin-bottom: 20px;
-}
-
 /* Seção do cabeçalho */
 
 header {
     padding: 40px 4%;
+}
+
+#love-icon {
+    width: 50px;  
+    height: 50px; 
+    margin-right: 20px; 
+    margin-top: -30px;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    cursor: pointer; 
+}
+
+#love-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
 }
 
 header nav ul {
@@ -38,16 +45,18 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #ffff;
+    color: #e65b7d;
     font-size: 17px;
     padding: 10px 20px;
     position: relative;
     transition: color 0.3s;
+    font-size: 25px;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 header nav ul li a::after {
@@ -57,7 +66,7 @@ header nav ul li a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background: #ffff;
+    background: #e65b7d;
     transition: width 0.3s ease-in-out;
 }
 
@@ -66,12 +75,7 @@ header nav ul li a:hover::after {
 }
 
 header nav ul li a:hover {
-    color: #ffffff;
-}
-
-header .Contato {
-    display: inline-block;
-    margin-left: 20px;
+    color: #e65b7d;
 }
 
 /* Seção topo do site */
@@ -92,9 +96,10 @@ section .topo-do-site {
     justify-content: center;
 }
 
+/* Estilo original */
 .topo-do-site h1 {
     font-size: 65px;
-    color: #b5b5f4;
+    color: #e65b7d;
     margin-bottom: -10px;
     margin-right: 60px;
     padding-right: 5px;
@@ -102,11 +107,42 @@ section .topo-do-site {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #e65b7d; 
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite, disappear 4s 1s forwards;
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #e65b7d;
+    }
+}
+
+
+@keyframes disappear {
+    100% {
+        border-color: transparent;
+    }
 }
 
 .topo-do-site p {
-    font-size: 40px;
-    color: #a1a1ddd2;
+    font-size: 50px;
+    color: #FB6F92;
     margin-top: -10px;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
@@ -115,13 +151,12 @@ section .topo-do-site {
 }
 
 .img-topo-site img {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    width: 480px;
+    height: 100%;
     object-fit: cover;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
     animation: float 3s ease-in-out infinite;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 @keyframes float {
@@ -144,6 +179,7 @@ section .topo-do-site {
     align-items: center;
 }
 
+
 /* Seção de Sobre */
 
 .sobre {
@@ -152,18 +188,21 @@ section .topo-do-site {
 }
 
 .sobre .titulo {
-    color: #7a7ab1;
+    color: #e65b7d;
     margin-bottom: 50px;
     margin-top: 50px;
-    font-size: 45px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
 }
+
 
 .sobre .paragrafo {
     color: #fff;
     line-height: 1.5;
     margin: 20px 0;
     padding: 40px 40px;
-    background-color: #1a1f566a;
+    background-color: #e65b7e5d;
     border-radius: 10px;
     font-size: larger;
     justify-content: center;
@@ -171,7 +210,7 @@ section .topo-do-site {
 }
 
 .sobre .paragrafo:hover {
-    background-color: #2b306a;
+    background-color: #e65b7d;
 }
 
 /* Seção de Habilidades */
@@ -182,16 +221,17 @@ section .topo-do-site {
 }
 
 .skills h2 {
-    font-size: 40px;
-    color: #7a7ab1;
+    font-size: 45px;
+    color: #e65b7d;
     margin-bottom: 30px;
+    font-family: "Pixelify Sans", sans-serif;;
 }
 
 .progress-bar-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .progress-bar {
@@ -239,79 +279,136 @@ progress::-webkit-progress-value {
 
 .icon-html {
     color: #e34f26;
+    text-shadow: 2px 2px 4px rgba(232, 71, 189, 0.275);
 }
 
 .icon-css {
     color: #264de4;
+    text-shadow: 2px 2px 4px rgba(232, 71, 189, 0.275);
 }
 
 .icon-js {
     color: #f0db4f;
+    text-shadow: 2px 2px 4px rgba(232, 71, 189, 0.275);
 }
 
 .icon-py {
-    color: #ff9f43;
+    color: #e87f1d;
+    text-shadow: 2px 2px 4px rgba(232, 71, 189, 0.275);
 }
 
 .nomes {
-    font-size: 20px;
-    color: #fff; 
+    font-size: 25px;
+    color: #e65b7d; 
     font-weight: 600; 
 }
 
 /* Seção de projetos */
 
-section.projetos {
-    padding: 70px 0;
-    margin-bottom: 40px;
-    margin-top: 50px;
-}
-
-h2-titulo {
-    font-size: 20px;
+.projetos-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%; 
 }
 
 .projetos-lista {
     display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    animation: float 3s ease-in-out infinite;
+    overflow-x: hidden; 
+    gap: 20px; 
+    padding: 10px;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .projeto-item {
-    color: #b5b5f4d2;
+    color: #e65b7d;
     font-size: 18px;
     text-align: center;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 400px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 10px; 
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.349);
     border-radius: 50px;
     transition: box-shadow 0.3s;
 }
 
-.projeto-item a i {
-    font-size: 120px;
-    color: #b5b5f4d2;
-    transition: color 0.3s;
-    margin-top: 25px;
-    margin-bottom: 50px;
+#projetos .titulo {
+    font-size: 45px; 
+    color: #e65b7d;
+    font-family: "Pixelify Sans", sans-serif;
+    margin-top: 90px;
+    margin-bottom: 20px;
 }
 
-.projeto-item a:hover i {
-    color: #c4c4f2;
+#calculadora {
+    width: 130px;
+}
+
+#peso {
+    width: 170px;
+}
+
+#lixeira {
+    width: 150px;
+}
+
+.projeto-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.scroll-btn {
+    background-color: #e65b7d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: #c14b68;
+}
+
+.scroll-btn.left {
+    left: -30px;
+}
+
+.scroll-btn.right {
+    right: -30px;
 }
 
 /* Seção Contato */
 
-.contato-titulo {
+#contato .contato-titulo {
     margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 70px;
+    color: #e65b7d;
+    font-size: 45px;
+    font-family: "Pixelify Sans", sans-serif;
+
+}
+
+#letter-icon {
+    width: 50px;  
+    margin-right: 20px;
+    position:static;
 }
 
 form.formulario-contato {
@@ -330,7 +427,7 @@ form.formulario-contato {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #ebe9e0;
+    color: #fff;
     font-size: 16px;
 }
 
@@ -341,32 +438,34 @@ form.formulario-contato {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #e4e2d5;
+    background-color: #fff;
     color: #333;
 }
 
 .form-group button {
-    background-color: #e4e2d5;
-    color: #515181;
+    background-color: #ffffff;;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.form-group button:hover {
-    background-color: #dddbd1;
+.form-group button:hover  {
+    background-color: #eeeeee;
+    transform: scale(1.05); 
 }
 
 /* Seção Redes Sociais */
 
-.redes-sociais {
-    animation: float 3s ease-in-out infinite;
-}
-
-.redes-sociais-titulo {
-    margin-top: 200px;
+#redes-sociais .redes-titulo {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 150px;
+    color: #e65b7d;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 .redes-lista {
@@ -377,17 +476,17 @@ form.formulario-contato {
 }
 
 .rede-item {
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
 .rede-item i {
     font-size: 65px;
-    color: #b5b5f4d2;
+    color: #e65b7d;
     transition: color 0.3s;
 }
 
 .rede-item a:hover i {
-    color: #c4c4f2;
+    color: #d25272;
 }
 
 html {
@@ -513,4 +612,3 @@ html {
         top: 10px;
     }
 }
-
