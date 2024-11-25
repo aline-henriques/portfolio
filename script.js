@@ -7,3 +7,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const scrollContainer = document.querySelector(".projetos-lista");
+const leftButton = document.querySelector(".scroll-btn.left");
+const rightButton = document.querySelector(".scroll-btn.right");
+
+const scrollAmount = 400;
+
+leftButton.addEventListener("click", () => {
+    scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth",
+    });
+});
+
+
+rightButton.addEventListener("click", () => {
+    scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+    });
+});
