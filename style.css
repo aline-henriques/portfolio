@@ -358,6 +358,10 @@ progress::-webkit-progress-value {
     width: 150px;
 }
 
+#crud {
+    width: 160px;
+}
+
 .projeto-item:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
